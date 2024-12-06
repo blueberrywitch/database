@@ -38,14 +38,14 @@ public class User {
     private byte age;
 
     @Column(name = "home_number")
-    private char[] homeNumber;
+    private String homeNumber;
 
     @Column(name = "phone_number")
     private String phoneNumber;
 
 
 
-    public User(String firstName, String lastName, String middleName, byte age, String street, char[] homeNumber, String phoneNumber) {
+    public User(String firstName, String lastName, String middleName, byte age, String street, String homeNumber, String phoneNumber) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.middleName = middleName;

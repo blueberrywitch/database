@@ -15,8 +15,7 @@ public class UserService {
     private final UserRepository userRepository;
 
     // Create user
-    public User createUser(String name, String lastName, String middleName, byte age, String street, char[] homeNumber, String phoneNumber) {
-        User user = new User(name, lastName, middleName, age, street, homeNumber, phoneNumber);
+    public User createUser(User user) {
         return userRepository.save(user);
     }
 

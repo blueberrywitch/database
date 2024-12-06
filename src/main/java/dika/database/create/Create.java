@@ -14,9 +14,9 @@ public class Create {
     private final UserService userService;
 
     @PostConstruct
-    public void createUsers(String name, String lastName, String middleName, byte age, String street, char[] homeNumber, String phoneNumber) {
+    public void createUsers() {
 
-        User user1 = new User(name, lastName, middleName, age, street, homeNumber, PhoneNumber.isValidPhoneNumber(phoneNumber));
+        User user1 = new User("name", "lastName", "middleName", (byte) 12, "street","2a", PhoneNumber.isValidPhoneNumber("89859308388"));
 
         userService.createUser(user1);
 
